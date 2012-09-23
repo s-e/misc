@@ -1,0 +1,34 @@
+{
+    "maintainer_email": "tl@lenss.nl",
+    "recipes": {
+      "pear": "The PEAR package",
+      "pear::phpunit", "Unit testing for PHP",
+    },
+    "groupings": {
+    },
+    "recommendations": {
+    },
+    "description": "Install PEAR packages",
+    "attributes": {
+    },
+    "suggestions": {
+    },
+    "dependencies": {
+    },
+    "platforms": {
+      "debian": [
+
+      ]
+    },
+    "conflicting": {
+    },
+    "long_description": "",
+    "version": "0.1",
+    "providing": {
+    },
+    "name": "pear",
+    "license": "Apache 2.0",
+    "maintainer": "Thijs Lensselink",
+    "replacing": {
+    }
+  }
