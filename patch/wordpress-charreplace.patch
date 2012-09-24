@@ -1,0 +1,13 @@
+--- formatting.php	2012-09-24 20:07:14.000000000 +0200
++++ formatting.php	2012-09-24 20:09:27.000000000 +0200
+@@ -70,8 +70,8 @@
+ 			$cockney = $cockneyreplace = array();
+ 		}
+ 
+-		$static_characters = array_merge( array( '---', ' -- ', '--', ' - ', 'xn&#8211;', '...', '``', '\'\'', ' (tm)' ), $cockney );
+-		$static_replacements = array_merge( array( $em_dash, ' ' . $em_dash . ' ', $en_dash, ' ' . $en_dash . ' ', 'xn--', '&#8230;', $opening_quote, $closing_quote, ' &#8482;' ), $cockneyreplace );
++		$static_characters = $cockney;
++		$static_replacements = $cockneyreplace;
+ 
+ 		$dynamic = array();
+ 		if ( "'" != $apos ) {
