@@ -1,9 +1,9 @@
 bash "dotdeb keys" do
   code <<-EOH
-gpg --keyserver keys.gnupg.net --recv-key 89DF5277
-gpg -a --export 89DF5277 | apt-key add -
+wget http://www.dotdeb.org/dotdeb.gpg -O /tmp/dotdeb.gpg
+cat /tmp/dotdeb.gpg | sudo apt-key add -
 EOH
-  action :nothing
+  action :run
 end
 
 execute "apt-get update" do
