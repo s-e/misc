@@ -1,12 +1,12 @@
 [client]
 host     = localhost
 user     = debian-sys-maint
-password = <%= node['mysql']['server_debian_password'] %>
-socket   = <%= node['mysql']['socket'] %>
+password = <%= node['percona']['server_debian_password'] %>
+socket   = <%= node['percona']['socket'] %>
 
 [mysql_upgrade]
 host     = localhost
 user     = debian-sys-maint
-password = <%= node['mysql']['server_debian_password'] %>
-socket   = <%= node['mysql']['socket'] %>
+password = <%= node['percona']['server_debian_password'] %>
+socket   = <%= node['percona']['socket'] %>
 basedir  = /usr
